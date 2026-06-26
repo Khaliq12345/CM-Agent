@@ -7,5 +7,21 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: [],
+  modules: ["@nuxtjs/google-fonts", "@nuxtjs/color-mode", "@nuxt/icon"],
+
+  googleFonts: {
+    families: {
+      Geist: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      "Geist Mono": [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    },
+    display: "swap",
+    preconnect: true,
+    prefetch: false,
+  },
+  colorMode: {
+    preference: "light",
+    fallback: "light",
+    classSuffix: "",
+    
+  },
 });

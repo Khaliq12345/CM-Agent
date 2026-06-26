@@ -1,25 +1,32 @@
 <template>
-  <div class="relative">
-    <main class="w-full py-4 mx-auto max-w-330 space-y-8 border-r-3 border-l-3">
+  <div class="relative overflow-x-hidden">
+    <main
+      class="w-full py-4 mx-auto max-w-330 space-y-8 border-r-3 border-l-3 px-6"
+    >
       <Header />
       <Intro />
       <XDivider />
 
-      <div class="py-8">
+      <div class="-mx-6 py-14">
         <Number />
       </div>
       <XDivider />
 
-      <Features />
+      <!-- <Features /> -->
+      <div class="py-12">
+        <Features2 />
+      </div>
       <XDivider />
 
-      <End />
+      <div class="pt-18 pb-8 -mx-6">
+        <XDivider />
+        <End />
+        <XDivider />
+      </div>
+
+      <div class="-mx-6">
+        <Footer />
+      </div>
     </main>
   </div>
 </template>
-
-<script setup lang="ts">
-import Squares from "~/components/ui/squares/Squares.vue";
-import PixelSnow from "~/components/ui/pixel-snow/PixelSnow.vue";
-</script>
-n

@@ -1,23 +1,21 @@
 <template>
   <XDivider />
   <div class="grid grid-cols-1 lg:grid-cols-4 py-12">
-    <div class="bg-foreground">
-      <Squares
-        :speed="0.2"
-        direction="diagonal"
-        border-color="#fff"
-        hover-fill-color="#222"
-        :square-size="50"
-        class="opacity-20"
+    <div class="md:border-l-0 border-2 border-r-0 md:border-3">
+      <Galaxy
+        :star-count="2000"
+        :speed="0.5"
+        :star-size="2"
+        star-color="#333333"
       />
     </div>
     <div
       v-for="stat in stats"
       :key="stat.label"
-      class="flex flex-col justify-center gap-1 text-center p-4 md:border-t-3 border-b-3 border-r-3 last:border-r-0"
+      class="flex flex-col justify-center gap-1 text-center p-4 md:border-t-3 border-b-3 md:border-r-3 last:border-r-0"
     >
       <div class="flex justify-center items-center gap-0.5">
-        <span v-if="stat.prefix" class="text-4xl font-semibold">{{
+        <span v-if="stat.prefix" class="text-2xl md:text-4xl font-medium">{{
           stat.prefix
         }}</span>
         <CountUp
@@ -25,11 +23,11 @@
           :separator="stat.separator ?? ''"
           :duration="3"
           :decimals="stat.decimals ?? 0"
-          class="text-5xl font-bold tracking-tight"
+          class="text-2xl md:text-5xl font-medium tracking-tight"
         />
-        <span class="text-5xl font-semibold">{{ stat.suffix }}</span>
+        <span class="text-2xl md:text-5xl font-medium">{{ stat.suffix }}</span>
       </div>
-      <p class=" text-muted-foreground leading-snug">
+      <p class="text-muted-foreground leading-snug">
         {{ stat.label }}
       </p>
     </div>
@@ -39,7 +37,7 @@
 
 <script lang="ts" setup>
 import CountUp from "~/components/ui/count-up/CountUp.vue";
-import Squares from "~/components/ui/squares/Squares.vue";
+import Galaxy from "~/components/ui/galaxy/Galaxy.vue";
 
 const stats = [
   {

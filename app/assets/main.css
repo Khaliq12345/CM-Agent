@@ -128,3 +128,8 @@
     linear-gradient(to bottom, theme("colors.gray.200") 1px, transparent 1px);
   background-size: 280px 280px; /* taille des cellules */
 }
+
+@theme {
+  --font-sans: "Geist", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+}

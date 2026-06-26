@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full md:mx-auto md:max-w-6xl md:px-6 md:py-4">
+  <header class="w-full ">
     <BlurText
       text="CM Agent"
       by="letters"
