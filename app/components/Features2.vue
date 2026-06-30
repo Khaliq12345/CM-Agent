@@ -1,17 +1,13 @@
 <template>
   <section class="w-full">
     <!-- Header -->
-    <div class="w-full flex flex-col justify-start mb-10 md:mb-18">
-      <KineticTextReveal
-        text="Un agent, Quatre super-pouvoirs"
-        split-by="words"
-        direction="up"
-        :stagger="0.08"
-        :distance="20"
-        :blur="true"
-        class="text-2xl md:text-[50px] font-medium text-foreground"
+    <div
+      class="md:w-[50%] flex flex-col justify-start items-start mb-10 md:mb-18 p-4"
+    >
+      <TrueFocus
+        sentence="Un agent, Quatre super-pouvoirs"
+        class="text-3xl md:text-[50px]"
       />
-      <p class="md:text-xl">Tout ce dont vous avez besoin à un seul endroit</p>
     </div>
 
     <!-- Grid 2x2 avec bordures comme la capture -->
@@ -38,38 +34,37 @@
 </template>
 
 <script setup lang="ts">
-import KineticTextReveal from "~/components/ui/kinetic-text-reveal/KineticTextReveal.vue";
 import ShowcaseCard from "~/components/ui/showcase-card/ShowcaseCard.vue";
+import TrueFocus from "~/components/ui/true-focus/TrueFocus.vue";
 
 const features = [
   {
-    title: "Création & Publication automatique",
+    title: "",
     description:
       "CM Agent rédige, planifie et publie vos contenus aux heures d'impact maximal sur LinkedIn, Instagram, X et Facebook.",
-    tagline: "Votre calendrier éditorial, rempli à l'avance.",
-    image:
-      "https://images.pexels.com/photos/17323801/pexels-photo-17323801.jpeg",
+    tagline: "",
+    image: "/features/automatique-posts.mp4",
   },
   {
-    title: "Engagement & Veille",
+    title: "",
     description:
       "L'agent surveille votre secteur, répond aux commentaires et interagit avec les publications pertinentes.",
-    tagline: "Restez présent, sans effort.",
-    image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
+    tagline: "",
+    image: "/features/engagement.mp4",
   },
   {
-    title: "Sourcing de Prospects",
+    title: "",
     description:
       "Définissez votre client idéal. L'agent identifie les bons profils et amorce la relation.",
-    tagline: "Trouvez vos futurs clients avant qu'ils vous trouvent.",
-    image: "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg",
+    tagline: "",
+    image: "/features/prospect.mp4",
   },
   {
-    title: "Outreach & Relances automatiques",
+    title: "",
     description:
       "Messages personnalisés, suivis intelligents et relances automatiques.",
-    tagline: "Votre commercial qui ne dort jamais.",
-    image: "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg",
+    tagline: "",
+    image: "/features/outreach.mp4",
   },
 ];
 </script>

@@ -105,7 +105,14 @@ const glowStyle = computed(() => {
       </div>
 
       <div class="absolute inset-0" :style="parallaxStyle">
-        <img :src="imageUrl" :alt="imageAlt" class="size-full object-cover" />
+        <video
+          :src="imageUrl"
+          :alt="imageAlt"
+          autoplay
+          muted
+          loop
+          class="size-full object-cover"
+        />
       </div>
 
       <div
@@ -114,7 +121,7 @@ const glowStyle = computed(() => {
     </div>
 
     <!-- Content section -->
-    <div class="relative z-10 -mt-8 px-4 pb-4 sm:px-6 sm:pb-6">
+    <div class="relative z-10 px-4 pb-4 sm:px-6 sm:pb-6">
       <h2
         class="mb-2 border-0 text-2xl/tight font-medium tracking-tight text-neutral-900 dark:text-white sm:mb-3 sm:text-3xl lg:text-4xl"
       >

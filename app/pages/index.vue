@@ -1,24 +1,27 @@
 <template>
-  <div class="relative overflow-x-hidden">
+  <div class="relative overflow-x-hidden px-4 md:px-0">
     <main
-      class="w-full py-4 mx-auto max-w-330 space-y-8 border-r-3 border-l-3 px-6"
+      class="w-full py-4 md:mx-auto max-w-330 space-y-18 border-r-3 border-l-3 px-6"
     >
-      <Header />
-      <Intro />
-      <XDivider />
+      <div class="-mx-6">
+        <Header />
+        <XDivider />
+        <Intro />
+        <XDivider />
+      </div>
 
-      <div class="-mx-6 py-14">
+      <div class="-mx-6">
         <Number />
       </div>
-      <XDivider />
 
       <!-- <Features /> -->
-      <div class="py-12">
+      <div class="-mx-6">
+        <XDivider />
         <Features2 />
+        <XDivider />
       </div>
-      <XDivider />
 
-      <div class="pt-18 pb-8 -mx-6">
+      <div class="-mx-6">
         <XDivider />
         <End />
         <XDivider />

@@ -130,6 +130,6 @@
 }
 
 @theme {
-  --font-sans: "Geist", sans-serif;
-  --font-mono: "Geist Mono", monospace;
+  --font-sans: "Aldrich", "Geist", sans-serif;
+  --font-mono: "Aldrich", "Geist Mono", monospace;
 }

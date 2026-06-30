@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     families: {
       Geist: [100, 200, 300, 400, 500, 600, 700, 800, 900],
       "Geist Mono": [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      Aldrich: true,
     },
     display: "swap",
     preconnect: true,
@@ -22,6 +23,8 @@ export default defineNuxtConfig({
     preference: "light",
     fallback: "light",
     classSuffix: "",
-    
+  },
+  runtimeConfig: {
+    baserowApiToken: "",
   },
 });

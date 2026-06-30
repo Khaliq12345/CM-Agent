@@ -1,7 +1,7 @@
 <template>
   <XDivider />
-  <div class="grid grid-cols-1 lg:grid-cols-4 py-12">
-    <div class="md:border-l-0 border-2 border-r-0 md:border-3">
+  <div class="grid grid-cols-1 lg:grid-cols-4">
+    <div class="md:border-r-3">
       <Galaxy
         :star-count="2000"
         :speed="0.5"
@@ -12,9 +12,9 @@
     <div
       v-for="stat in stats"
       :key="stat.label"
-      class="flex flex-col justify-center gap-1 text-center p-4 md:border-t-3 border-b-3 md:border-r-3 last:border-r-0"
+      class="flex flex-col md:justify-center gap-1 md:text-center p-4 border-t-3 md:border-t-0 md:border-r-3 last:border-r-0"
     >
-      <div class="flex justify-center items-center gap-0.5">
+      <div class="flex md:justify-center items-center gap-0.5">
         <span v-if="stat.prefix" class="text-2xl md:text-4xl font-medium">{{
           stat.prefix
         }}</span>
