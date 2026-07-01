@@ -51,6 +51,30 @@
 </template>
 <script setup>
 import Galaxy from "~/components/ui/galaxy/Galaxy.vue";
+
+const url = useRequestURL();
+
+useSeoMeta({
+  title: "Inscription confirmée | CM Agent",
+  description:
+    "Merci pour votre intérêt pour CM Agent. Votre inscription à la liste d’attente est confirmée.",
+  robots: "noindex,follow",
+  ogTitle: "Inscription confirmée | CM Agent",
+  ogDescription:
+    "Merci pour votre intérêt pour CM Agent. Votre inscription à la liste d’attente est confirmée.",
+  ogType: "website",
+  ogUrl: url.href,
+  ogImage: "/full-logo.png",
+  twitterCard: "summary_large_image",
+  twitterTitle: "Inscription confirmée | CM Agent",
+  twitterDescription:
+    "Merci pour votre intérêt pour CM Agent. Votre inscription à la liste d’attente est confirmée.",
+  twitterImage: "/full-logo.png",
+});
+
+useHead({
+  link: [{ rel: "canonical", href: url.href }],
+});
 </script>
 <style scoped>
 @keyframes ring-pop {
