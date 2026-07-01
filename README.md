@@ -1,7 +1,7 @@
 # CM Agent
 
 <p align="center">
-  <img src="public/full-logo.png" alt="Logo CM Agent" width="240" />
+  <img src="public/cm-logo-simple.png" alt="Logo CM Agent" width="240" />
 </p>
 
 CM Agent est une plateforme d’intelligence artificielle pensée pour aider les équipes à transformer leur présence sur les réseaux sociaux en un levier de croissance durable. L’objectif est simple : automatiser les tâches répétitives, améliorer l’engagement et accélérer la prospection sans sacrifier la qualité humaine.
