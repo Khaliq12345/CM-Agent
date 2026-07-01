@@ -1,60 +1,66 @@
 # CM Agent
 
-CM Agent est une landing page moderne et immersive conçue pour présenter une plateforme d’intelligence artificielle dédiée à l’automatisation des réseaux sociaux. Le site met en avant les promesses de l’offre : publication automatique, engagement ciblé, prospection active et croissance pilotée sans effort manuel.
+<p align="center">
+  <img src="public/full-logo.png" alt="Logo CM Agent" width="240" />
+</p>
 
-## Vue d’ensemble
+CM Agent est une plateforme d’intelligence artificielle pensée pour aider les équipes à transformer leur présence sur les réseaux sociaux en un levier de croissance durable. L’objectif est simple : automatiser les tâches répétitives, améliorer l’engagement et accélérer la prospection sans sacrifier la qualité humaine.
 
-Cette application est construite avec Nuxt 4 et un front-end orienté expérience visuelle, avec des animations, des composants UI premium et un parcours de conversion optimisé pour la collecte d’inscriptions via une liste d’attente.
+## Pourquoi CM Agent ?
 
-### Objectif du site
+CM Agent permet de :
 
-- Présenter clairement la valeur de CM Agent
-- Montrer les principaux piliers de l’offre
-- Encourager l’inscription à la liste d’attente
-- Offrir une expérience moderne et mémorable sur desktop et mobile
+- gagner du temps sur la production et la gestion quotidienne des réseaux sociaux,
+- maintenir une présence active et cohérente sur plusieurs canaux,
+- améliorer l’engagement grâce à des interactions plus intelligentes,
+- générer plus de leads et de opportunités commerciales avec moins d’effort manuel,
+- offrir une expérience produit moderne, fluide et orientée résultat.
 
-## Fonctionnalités principales
+## Ce que propose la plateforme
 
-### 1. Landing page immersive
+### Publication automatique
 
-La page d’accueil combine :
+<img src="public/features/images/auto-post.png" alt="Publication automatique" width="320" />
 
-- un storytelling produit structuré,
-- des sections de preuve et d’offre,
-- des visuels animés,
-- un appel à l’action fort pour rejoindre la liste d’attente.
+Planifiez, programmez et publiez du contenu de manière régulière pour garder une présence forte, même quand l’équipe est occupée ailleurs.
 
-### 2. Présentation des super-pouvoirs de l’agent
+### Engagement intelligent
 
-Le site met en avant quatre grands axes :
+<img src="public/features/images/engagement.png" alt="Engagement intelligent" width="320" />
 
-- publication automatique,
-- engagement intelligent,
-- prospection automatisée,
-- relances personnalisées et suivi commercial.
+Stimulez les interactions avec votre audience grâce à des actions ciblées et à une logique d’engagement plus pertinente.
 
-### 3. Formulaire d’inscription
+### Prospection automatisée
 
-Un modal de capture permet à l’utilisateur de saisir :
+<img src="public/features/images/prospect.png" alt="Prospection automatisée" width="320" />
 
-- nom et prénom,
-- adresse e-mail,
-- numéro de téléphone.
+Identifiez et qualifier les opportunités plus rapidement pour construire un pipeline plus solide et plus réactif.
 
-Les données sont ensuite envoyées vers une API interne puis intégrées à une source externe via Baserow.
+### Relances et outreach
 
-### 4. Page de confirmation
+<img src="public/features/images/outreach.png" alt="Relances et outreach" width="320" />
 
-Après soumission du formulaire, l’utilisateur est redirigé vers une page de remerciement claire et rassurante.
+Automatisez les relances et les suivis pour renforcer la conversion sans multiplier les efforts manuels.
 
-### 5. Expérience graphique premium
+## Les avantages clés
 
-Le site propose une identité visuelle soignée avec :
+- Productivité accrue : moins de tâches répétitives, plus de temps dédié au stratégique.
+- Cohérence de marque : un ton, un rythme et une qualité de contenu homogènes.
+- Meilleure conversion : plus d’interactions pertinentes, plus d’opportunités qualifiées.
+- Expérience premium : une interface moderne, visuelle et orientée conversion.
+- Scalabilité : adapté aux équipes qui veulent grandir sans perdre en efficacité.
 
-- animations immersives,
-- composants réutilisables,
-- typographies personnalisées,
-- une esthétique sobre, moderne et technologique.
+## Une expérience pensée pour convertir
+
+Le site de présentation est conçu comme une landing page immersive qui accompagne l’utilisateur dans un parcours clair : découvrir la promesse du produit, comprendre les bénéfices, puis rejoindre la liste d’attente via un formulaire simple et efficace.
+
+## Fonctionnement du parcours d’inscription
+
+1. L’utilisateur découvre la valeur de CM Agent.
+2. Il découvre les principales fonctionnalitées via des visuels et des messages orientés bénéfices.
+3. Il peut rejoindre la liste d’attente via un formulaire simple.
+4. Les informations sont envoyées à une API interne et traitées pour l’enregistrement.
+5. L’utilisateur arrive sur une page de confirmation rassurante.
 
 ## Stack technique
 
@@ -78,55 +84,26 @@ server/
   api/             API serveur pour la liste d’attente
 ```
 
-## Pages disponibles
-
-- / : page d’accueil principale
-- /thanks : page de confirmation après inscription
-- /bg : page de fond visuel / animation
-
-## Flux d’inscription
-
-1. L’utilisateur clique sur un bouton d’action principal.
-2. Une modale s’ouvre avec un formulaire.
-3. Les informations sont validées côté client.
-4. La requête est envoyée à l’API interne.
-5. Les données sont enregistrées via Baserow.
-6. L’utilisateur est redirigé vers la page de confirmation.
-
-## Configuration locale
+## Installation locale
 
 ### Prérequis
 
 - Node.js 20+
 - npm, pnpm, yarn ou bun
 
-### Installation
+### Installer les dépendances
 
 ```bash
 npm install
 ```
 
-### Démarrage du serveur de développement
+### Démarrer le site
 
 ```bash
 npm run dev
 ```
 
-Le site sera accessible à l’adresse : http://localhost:3000
-
-## Build et prévisualisation
-
-### Build de production
-
-```bash
-npm run build
-```
-
-### Prévisualisation locale
-
-```bash
-npm run preview
-```
+Le site sera alors disponible sur http://localhost:3000.
 
 ## Variables d’environnement
 
@@ -137,13 +114,6 @@ NUXT_BASEROW_API_TOKEN=your_token_here
 ```
 
 Cette valeur est utilisée par l’API du endpoint de liste d’attente dans [server/api/waitlist.post.ts](server/api/waitlist.post.ts).
-
-## Notes fonctionnelles
-
-- Le formulaire vérifie les champs obligatoires.
-- Les validations e-mail et téléphone sont gérées côté front.
-- Le parcours utilisateur est pensé pour maximiser la conversion vers l’inscription.
-- Les métadonnées SEO sont intégrées pour la page d’accueil, la page de confirmation et la page de fond.
 
 ## Contact
 
