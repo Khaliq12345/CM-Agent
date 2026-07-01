@@ -199,8 +199,8 @@ async function submit() {
     });
 
     resetForm();
-    modelValue.value = false;
     navigateTo("/thanks");
+    modelValue.value = false;
   } catch (err: any) {
     errorMessage.value = "Une erreur est survenue, veuillez réessayer.";
   } finally {
